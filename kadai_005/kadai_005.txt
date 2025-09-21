@@ -1,2 +1,23 @@
-4d4e058 (HEAD -> master) コメント追加！
-a9c9635 hello_world.txtを追加
+PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> mkdir kadai_005
+
+    Directory: C:\Users\imao3\Documents\GitHub\github-basic-kadai
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2025/09/21     9:03                kadai_005
+
+PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> git init && git add . && git commit -m "kadai_005を提出"
+Reinitialized existing Git repository in C:/Users/imao3/Documents/GitHub/github-basic-kadai/.git/
+[main 6225bf3] kadai_005を提出
+ 1 file changed, 2 insertions(+)
+ create mode 100644 kadai_005/kadai_005.txt
+PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> git push -u basic main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 460 bytes | 460.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sekine53629/github-basic-kadai
+   79e50d2..6225bf3  main -> main
+branch 'main' set up to track 'basic/main'.
