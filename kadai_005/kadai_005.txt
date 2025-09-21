@@ -1,39 +1,17 @@
-PS C:\Users\imao3\Documents\GitHub> mkdir git_challenge                                    
-PS C:\Users\imao3\Documents\GitHub\git_challenge> git add . && git commit -m "hello_world.txtを追加"    
-fatal: not a git repository (or any of the parent directories): .git
-PS C:\Users\imao3\Documents\GitHub\git_challenge> git init && git add . && git commit -m "hello_world.txt を追加"
-Initialized empty Git repository in C:/Users/imao3/Documents/GitHub/git_challenge/.git/
-[master (root-commit) ec7b4ea] hello_world.txtを追加
- 1 file changed, 1 insertion(+)
- create mode 100644 hello_world.txt
-PS C:\Users\imao3\Documents\GitHub\git_challenge> git add . && git commit -m "コメントを追記"             
-[master 458e44b] コメントを追記
- 1 file changed, 2 insertions(+), 1 deletion(-)
-PS C:\Users\imao3\Documents\GitHub\git_challenge> git log --oneline
-458e44b (HEAD -> master) コメントを追記
-ec7b4ea hello_world.txtを追加
+PS C:\Users\imao3\Documents\GitHub> mkdir git_challenge && cd .\git_challenge &&  git init && echo "Hello,World" > hello_world.txt && git add . && git commit -m "hello_world.txtを追加"
 
-PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> mkdir kadai_005 "ディレクトリを作製
-
-    Directory: C:\Users\imao3\Documents\GitHub\github-basic-kadai
+    Directory: C:\Users\imao3\Documents\GitHub
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d----          2025/09/21     9:03                kadai_005
+d----          2025/09/21    11:24                git_challenge
+Initialized empty Git repository in C:/Users/imao3/Documents/GitHub/git_challenge/.git/
+[master (root-commit) f6e74e2] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
 
-PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> git init && git add . && git commit -m "kadai_005を提出"　"インデックスをイニシャライズし、コミットを行う
-Reinitialized existing Git repository in C:/Users/imao3/Documents/GitHub/github-basic-kadai/.git/
-[main 6225bf3] kadai_005を提出
- 1 file changed, 2 insertions(+)
- create mode 100644 kadai_005/kadai_005.txt
-
-PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> git push -u basic main　"リモートのメインブランチにプッシュ
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 460 bytes | 460.00 KiB/s, done.
-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To https://github.com/Sekine53629/github-basic-kadai
-   79e50d2..6225bf3  main -> main
-branch 'main' set up to track 'basic/main'.
+PS C:\Users\imao3\Documents\GitHub\git_challenge> echo "こんにちは、世界！" >> hello_world.txt && git add . && git commit -m "コ メントを追加" && git log --oneline
+[master 3b58d90] コメントを追加
+ 1 file changed, 1 insertion(+)
+3b58d90 (HEAD -> master) コメントを追加
+f6e74e2 hello_world.txtを追加
