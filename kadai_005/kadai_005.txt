@@ -1,3 +1,18 @@
+PS C:\Users\imao3\Documents\GitHub> mkdir git_challenge                                    
+PS C:\Users\imao3\Documents\GitHub\git_challenge> git add . && git commit -m "hello_world.txtを追加"    
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\imao3\Documents\GitHub\git_challenge> git init && git add . && git commit -m "hello_world.txt を追加"
+Initialized empty Git repository in C:/Users/imao3/Documents/GitHub/git_challenge/.git/
+[master (root-commit) ec7b4ea] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\imao3\Documents\GitHub\git_challenge> git add . && git commit -m "コメントを追記"             
+[master 458e44b] コメントを追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\imao3\Documents\GitHub\git_challenge> git log --oneline
+458e44b (HEAD -> master) コメントを追記
+ec7b4ea hello_world.txtを追加
+
 PS C:\Users\imao3\Documents\GitHub\github-basic-kadai> mkdir kadai_005 "ディレクトリを作製
 
     Directory: C:\Users\imao3\Documents\GitHub\github-basic-kadai
@@ -22,7 +37,3 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/Sekine53629/github-basic-kadai
    79e50d2..6225bf3  main -> main
 branch 'main' set up to track 'basic/main'.
-
-PS C:\Users\imao3\Documents\GitHub\git_challenge> git log --oneline　"ファイルの変更履歴を記載
-4d4e058 (HEAD -> master) コメント追加！
-a9c9635 hello_world.txtを追加
